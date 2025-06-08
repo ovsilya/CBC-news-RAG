@@ -86,8 +86,8 @@ if __name__ == "__main__":
     # List of example messages to test
     test_messages = [
         "What’s CBC’s guideline on citing anonymous sources?",
-        "Suggest SEO headline for article: 1.6590078",
-        "Summarize article in the tweet style: 1.6225449"
+        "Suggest SEO headline for the article \"Indigenous students in school division where girl was shamed for ribbon skirt make inroads\".",
+        "Summarize the article \"Musquodoboit Harbour water project produces dry result as drought worsens\" in the tweet style." 
     ]
     
     for message in test_messages:

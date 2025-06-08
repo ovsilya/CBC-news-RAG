@@ -204,69 +204,70 @@ Below are example JSON outputs for specific queries, demonstrating the structure
 }
 ```
 
-#### Query: "Suggest SEO headline for article: 1.6590078"
+#### Query: "Suggest SEO headline for the article "Indigenous students in school division where girl was shamed for ribbon skirt make inroads"."
 ```json
 {
-  "answer": "Here is an SEO-optimized headline suggestion for the article:\n\n\"Discover Miniature Art: Transform Your Space, Transform Your Life\"\n\nThis headline is concise, keyword-rich, and emphasizes the transformative power of miniature art, which aligns with the article's theme. \n\nSource: [Want to make life more manageable? Miniature artists know the answer: sweat the small stuff](https://www.cbc.ca/news/canada/toronto/miniature-artists-1.6347842), ID: 1.6590078",
+  "answer": "Here are some SEO-optimized headline suggestions for the article titled \"Indigenous students in school division where girl was shamed for ribbon skirt make inroads\":\n\n1. \"Ribbon Skirt Movement Spurs Indigenous Reconciliation in Schools\"\n2. \"Saskatchewan Schools Embrace Indigenous Culture After Ribbon Skirt Incident\"\n3. \"Indigenous Education Advances in Wake of Ribbon Skirt Shame\"\n4. \"Cultural Change in Schools: From Ribbon Skirt Shame to Reconciliation\"\n5. \"Ribbon Skirt Sparks Educational Reform in Indigenous Studies\"\n\nThese headlines are designed to be concise, keyword-rich, and under 60 characters where possible. \n\nSource: [Indigenous students in school division where girl was shamed for ribbon skirt make inroads], ID: 1.6069359",
   "sources": [
     {
       "type": "news",
-      "content_id": "1.6347842",
-      "content_headline": "Want to make life more manageable? Miniature artists know the answer: sweat the small stuff"
+      "content_id": "1.6069359",
+      "content_headline": "Indigenous students in school division where girl was shamed for ribbon skirt make inroads"
     },
     {
       "type": "news",
-      "content_id": "1.6347842",
-      "content_headline": "Want to make life more manageable? Miniature artists know the answer: sweat the small stuff"
+      "content_id": "1.6069359",
+      "content_headline": "Indigenous students in school division where girl was shamed for ribbon skirt make inroads"
     },
     {
       "type": "news",
-      "content_id": "1.6347842",
-      "content_headline": "Want to make life more manageable? Miniature artists know the answer: sweat the small stuff"
+      "content_id": "1.6069359",
+      "content_headline": "Indigenous students in school division where girl was shamed for ribbon skirt make inroads"
     },
     {
       "type": "news",
-      "content_id": "1.6347842",
-      "content_headline": "Want to make life more manageable? Miniature artists know the answer: sweat the small stuff"
+      "content_id": "1.6069359",
+      "content_headline": "Indigenous students in school division where girl was shamed for ribbon skirt make inroads"
     },
     {
       "type": "news",
-      "content_id": "1.6609687",
-      "content_headline": "Marketplace is back! We're celebrating our 50th anniversary: CBC's Marketplace cheat sheet"
+      "content_id": "1.6069359",
+      "content_headline": "Indigenous students in school division where girl was shamed for ribbon skirt make inroads"
     }
   ]
 }
+
 ```
 
-#### Query: "Summarize article in the tweet style: 1.6225449"
+#### Query: "Summarize the article "Musquodoboit Harbour water project produces dry result as drought worsens" in the tweet style." 
 ```json
 {
-  "answer": "New chief of Peguis First Nation, Stan Bird, raises questions about the flip of a prime property on Wellington Crescent. Despite its $4.9M valuation, it was sold for $350K and later resold for $2.8M. Bird seeks clarity on the transaction details and accounting. #PeguisFirstNation #RealEstate #Transparency\n\nSource: \"New chief of Peguis First Nation questions flip of desirable Wellington Crescent land,\" ID: 1.7114953",
+  "answer": "Musquodoboit Harbour's water project falls short as drought conditions worsen. Halifax Water enforces restrictions, while local initiatives struggle to provide relief. Higher-than-average temperatures intensify the crisis. #WaterCrisis #DroughtWatch #NovaScotia\n\nSource: Musquodoboit Harbour water project produces dry result as drought worsens, ID: 1.7395951",
   "sources": [
     {
       "type": "news",
-      "content_id": "1.6347842",
-      "content_headline": "Want to make life more manageable? Miniature artists know the answer: sweat the small stuff"
+      "content_id": "1.7395951",
+      "content_headline": "Musquodoboit Harbour water project produces dry result as drought worsens"
     },
     {
       "type": "news",
-      "content_id": "1.6347842",
-      "content_headline": "Want to make life more manageable? Miniature artists know the answer: sweat the small stuff"
+      "content_id": "1.7395951",
+      "content_headline": "Musquodoboit Harbour water project produces dry result as drought worsens"
     },
     {
       "type": "news",
-      "content_id": "1.6347842",
-      "content_headline": "Want to make life more manageable? Miniature artists know the answer: sweat the small stuff"
+      "content_id": "1.7395951",
+      "content_headline": "Musquodoboit Harbour water project produces dry result as drought worsens"
     },
     {
       "type": "news",
-      "content_id": "1.6347842",
-      "content_headline": "Want to make life more manageable? Miniature artists know the answer: sweat the small stuff"
+      "content_id": "1.7395951",
+      "content_headline": "Musquodoboit Harbour water project produces dry result as drought worsens"
     },
     {
       "type": "news",
-      "content_id": "1.6347842",
-      "content_headline": "Want to make life more manageable? Miniature artists know the answer: sweat the small stuff"
+      "content_id": "1.7395951",
+      "content_headline": "Musquodoboit Harbour water project produces dry result as drought worsens"
     }
   ]
 }
