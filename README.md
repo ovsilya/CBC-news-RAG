@@ -162,10 +162,6 @@ Run the chatbot with:
 ```bash
 python app.py
 ```
-The default query in `app.py` is "Summarize this article for a Twitter post: 1.6590078". Modify the `user_message` variable in `app.py` to test other queries, such as:
-- News: "What’s the latest on Canadian politics?"
-- Guidelines: "What’s CBC’s policy on anonymous sources?"
-
 ### Demo
 Below is a short GIF demonstrating the chatbot in action, showing a sample query and its JSON response in the terminal.
 
