@@ -5,3 +5,7 @@ langchain-pinecone==0.2.0
 langchain-core==0.3.0
 pinecone==5.3.0
 openai==1.51.0
+beautifulsoup4==4.12.3
+selenium==4.25.0
+webdriver-manager==4.0.2
+python-dotenv==1.0.1

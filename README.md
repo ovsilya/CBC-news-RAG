@@ -20,9 +20,13 @@ cbc-chatbot/
 ├── app.py                    # Main chatbot logic (agent execution and response formatting)
 ├── utils.py                  # Metadata extraction utilities
 ├── tools.py                  # Helper functions, Pinecone setup, vector stores, and retrievers
+├── news_pinecone.py          # Script to upload news articles to the cbc-news Pinecone index
+├── guidelines_pinecone.py    # Script to upload editorial guidelines to the cbc-editorial Pinecone index
 ├── system_prompt.txt         # System prompt for the LLM agent
-├── assets/                   # Folder for static assets like demo GIF
-│   └── chatbot-demo.gif      # Demo GIF showcasing the chatbot in action
+├── news-dataset.json         # JSON file with news article data (required for news_pinecone.py)
+├── pages.txt                 # Text file with guideline URLs (required for guidelines_pinecone.py)
+├── assets/                   # Folder for static assets
+│   └── demo.gif              # GIF showcasing the chatbot in action
 ├── README.md                 # Project documentation (this file)
 ├── requirements.txt          # Python dependencies
 ```
@@ -47,9 +51,49 @@ cbc-chatbot/
    ```bash
    export OPENAI_API_KEY="sk-proj-your-openai-key"
    export PINECONE_API_KEY="pcsk-your-pinecone-key"
+   export PINECONE_ENVIRONMENT="us-east-1"
+   export INDEX_NEWS="cbc-news"
+   export INDEX_GUIDELINE="cbc-editorial"
    ```
 
-3. **Run the Chatbot**
+3. **Prepare Input Files**
+   - **News Data**: Use `news-dataset.json` file with news articles in the project root. Each article is a JSON object with at least `metadata` and `body`. Example:
+     ```json
+     [
+       {
+         "content_id": "1.6347842",
+         "content_headline": "Want to make life more manageable? Miniature artists know the answer",
+         "body": "Article text here...",
+         "content_type": "article",
+         "content_publish_time": "2022-10-01",
+         "content_last_update": "2022-10-02",
+         "content_word_count": "500",
+         "content_department_path": "/news/canada",
+         "content_categories": [{"content_category": "Art"}],
+         "content_tags": [{"name": "miniature art"}]
+       }
+     ]
+     ```
+   - **Guideline URLs**:A `pages.txt` file created with URLs of CBC guideline pages. Example:
+     ```
+     https://cbc.radio-canada.ca/en/vision/governance/journalistic-standards-and-practices/sources
+     https://cbc.radio-canada.ca/en/vision/governance/journalistic-standards-and-practices/investigative-journalism
+     ```
+
+4. **Upload Data to Pinecone**
+   Populate the Pinecone indices before running the chatbot:
+   - Upload news articles:
+     ```bash
+     python news_pinecone.py
+     ```
+     This processes `news-dataset.json`, chunks articles, and uploads them to the `cbc-news` index.
+   - Upload editorial guidelines:
+     ```bash
+     python guidelines_pinecone.py
+     ```
+     This scrapes URLs from `pages.txt`, chunks content, and uploads to the `cbc-editorial` index.
+
+5. **Run the Chatbot**
    Execute the main script to test the chatbot:
    ```bash
    python app.py
