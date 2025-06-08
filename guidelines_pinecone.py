@@ -13,10 +13,14 @@ import os
 import requests
 import time
 import uuid
+from dotenv import load_dotenv
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
+
+# Load environment variables
+load_dotenv()
 
 PINECONE_REGION = os.environ["PINECONE_ENVIRONMENT"]
 EDITORIAL_INDEX_NAME = os.environ["INDEX_GUIDELINE"]
